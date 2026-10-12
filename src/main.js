@@ -117,6 +117,9 @@ class AcodePrettier {
             case "json5":
                 return "json5";
 
+            case "toml":
+                return "toml";
+
             default:
                 return ext;
         }
@@ -164,6 +167,7 @@ class AcodePrettier {
             "graphql",
             "gql",
             "xml",
+            "toml",
         ];
 
         acode.registerFormatter(pluginId, extensions, this.run);

@@ -20,6 +20,13 @@ module.exports = (env, options) => {
 			filename: "[name].js",
 			chunkFilename: "[name].js",
 		},
+		resolve: {
+			alias: {
+				// prettier-plugin-toml requires "prettier" for its doc builders;
+				// point it to the standalone build so Node-only code isn't bundled.
+				prettier$: require.resolve("prettier/standalone"),
+			},
+		},
 		module: {
 			rules: [
 				{
