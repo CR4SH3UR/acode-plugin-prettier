@@ -11,6 +11,7 @@ import prettierParserMeriyah from "prettier/plugins/meriyah";
 import prettierParserPostcss from "prettier/plugins/postcss";
 import prettierParserTypescript from "prettier/plugins/typescript";
 import prettierParserYaml from "prettier/plugins/yaml";
+import prettierPluginToml from "prettier-plugin-toml";
 
 export default [
     prettierParserBabel,
@@ -26,4 +27,5 @@ export default [
     prettierParserTypescript,
     prettierParserYaml,
     prettierPluginAcorn,
+    prettierPluginToml,
 ];

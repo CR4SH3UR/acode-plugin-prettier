@@ -12,6 +12,7 @@
     "html-tag-js": "^1.1.41",
     "js-yaml": "^4.1.0",
     "prettier": "^3.0.2",
+    "prettier-plugin-toml": "^0.4.0",
     "toml": "^3.0.0"
   },
   "devDependencies": {
@@ -28,5 +29,10 @@
     "build-release": "webpack --mode production",
     "start-dev": "node .vscode/start-dev"
   },
-  "browserslist": "cover 100%,not android < 5"
+  "browserslist": "cover 100%,not android < 5",
+  "overrides": {
+    "prettier-plugin-toml": {
+      "prettier": "$prettier"
+    }
+  }
 }
